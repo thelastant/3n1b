@@ -14,7 +14,7 @@ import os.path
 import re
 import memcache
 # import tornado.database
-import tornado.torndb
+import torndb
 import tornado.httpserver
 import tornado.ioloop
 import tornado.options
