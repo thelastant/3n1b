@@ -62,8 +62,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="14" />
+            <state relative-caret-position="132">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -151,7 +151,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="164" y="9" width="1737" height="1051" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21586166" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -319,8 +318,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="14" />
+        <state relative-caret-position="132">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
