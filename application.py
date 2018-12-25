@@ -13,7 +13,8 @@ sys.setdefaultencoding("utf8")
 import os.path
 import re
 import memcache
-import tornado.database
+# import tornado.database
+import tornado.torndb
 import tornado.httpserver
 import tornado.ioloop
 import tornado.options
@@ -101,11 +102,11 @@ class Application(tornado.web.Application):
         tornado.web.Application.__init__(self, handlers, **settings)
 
         # Have one global connection to the blog DB across all handlers
-        self.db = tornado.database.Connection(
-            host = options.mysql_host, database = options.mysql_database,
-            user = options.mysql_user, password = options.mysql_password
-        )
-
+        # self.db = tornado.database.Connection(
+        #     host = options.mysql_host, database = options.mysql_database,
+        #     user = options.mysql_user, password = options.mysql_password
+        # )
+        self.db = torndb.Connection("127.0.0.1:3306", "3n1b", user="root", password="123456")
         # Have one global loader for loading models and handles
         self.loader = Loader(self.db)
 

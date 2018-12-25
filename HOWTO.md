@@ -53,16 +53,16 @@ HOWTO deploy on Linode
 ###Create database and then execute sql file in dbstructure/
 	$ mysql -u root -p
 	mysql> CREATE DATABASE 3n1b;
-	mysql> GRANT ALL PRIVILEGES ON 3n1b.* TO '3n1b'@'localhost' IDENTIFIED BY '3n1b';
+	mysql> GRANT ALL PRIVILEGES ON 3n1b.* TO 'root'@'140.82.1.133' IDENTIFIED BY '123456';
 	mysql> exit
-	$ mysql -u 3n1b -p --database=3n1b < dbstructure/3n1b.sql
-	$ mysql -u 3n1b -p --database=3n1b < dbstructure/node.sql
-	$ mysql -u 3n1b -p --database=3n1b < dbstructure/college.sql
-	$ mysql -u 3n1b -p --database=3n1b < dbstructure/plane.sql
-	$ mysql -u 3n1b -p --database=3n1b < dbstructure/province.sql
-	$ mysql -u 3n1b -p --database=3n1b < dbstructure/interest.sql
-	$ mysql -u 3n1b -p --database=3n1b < dbstructure/follow.sql
-	$ mysql -u 3n1b -p --database=3n1b < dbstructure/message.sql
+	$ mysql -u root -p --database=3n1b < dbstructure/3n1b.sql
+	$ mysql -u root -p --database=3n1b < dbstructure/node.sql
+	$ mysql -u root -p --database=3n1b < dbstructure/college.sql
+	$ mysql -u root -p --database=3n1b < dbstructure/plane.sql
+	$ mysql -u root -p --database=3n1b < dbstructure/province.sql
+	$ mysql -u root -p --database=3n1b < dbstructure/interest.sql
+	$ mysql -u root -p --database=3n1b < dbstructure/follow.sql
+	$ mysql -u root -p --database=3n1b < dbstructure/message.sql
 
 ###Create symbolic links to conf files
 	$ cd /etc/nginx 
