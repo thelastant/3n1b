@@ -44,7 +44,7 @@ env/
 *.swp
 *.sccsc
 *~
-/idea
+./idea
 # avatar
 static/avatar/
 !/static/avatar/b_default.png

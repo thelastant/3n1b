@@ -106,7 +106,7 @@ class Application(tornado.web.Application):
         #     host = options.mysql_host, database = options.mysql_database,
         #     user = options.mysql_user, password = options.mysql_password
         # )
-        self.db = torndb.Connection("140.82.1.133:3306", "3n1b", user="root", password="123456")
+        self.db = torndb.Connection("144.202.16.70:3306", "3n1b", user="root", password="123456")
         # Have one global loader for loading models and handles
         self.loader = Loader(self.db)
 
